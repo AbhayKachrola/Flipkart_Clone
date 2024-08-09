@@ -12,8 +12,10 @@ export const cartReducer = (state = { cartItems: []}, action) => {
                     ...state, cartItems: state.cartItems.map(x => x.product === existItem.product ? item : x)
                 }
             } else {
+                // saveCart(item)
                 return  { ...state, cartItems: [...state.cartItems, item]}
             }
+
         case actionTypes.REMOVE_FROM_CART:
             return {
                 ...state, cartItems: state.cartItems.filter(product => product.id !== action.payload)
@@ -22,3 +24,15 @@ export const cartReducer = (state = { cartItems: []}, action) => {
             return state;
     }
 }
+
+// Function to save the cart to localStorage
+// function saveCart(cart)
+//  {
+//   localStorage.setItem('cart', JSON.stringify(cart));
+// }
+
+// Function to load the cart from localStorage
+// function loadCart() {
+//   const cart = localStorage.getItem('cart');
+//   return cart ? JSON.parse(cart): [];
+// }

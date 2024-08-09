@@ -9,8 +9,6 @@ import { useNavigate } from 'react-router-dom';
 import { addTowishlist } from '../../redux/actions/wishlistAction';
 import { addToCart } from '../../redux/actions/cartActions';
 import { useDispatch } from 'react-redux';
-// import Wishlist from '../Wishlist/Wishlist';
-
 const LeftContainer = styled(Box)(({ theme }) => ({
     minWidth: '40%',
     padding: '40px 0 0 80px',
