@@ -10,7 +10,7 @@ const router = express.Router();
 import stripePackage from 'stripe';
 
 // Initialize Stripe with your secret key
-const stripe = stripePackage('sk_test_51OwTgPSF8k242W8hEaynbsT2jV5GEGxLl4gk2cgIQACfaHVJdmrsZLSGO74uyCJ41dmfllQjSkjLj0NDCMoHr6nN00ksj9blI4');
+const stripe = stripePackage('Your Stripe key');
 
 //login & signup
 router.post('/signup', userSignUp);

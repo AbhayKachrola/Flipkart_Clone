@@ -66,7 +66,7 @@ const Cart = () => {
     }
 
     const buyNow = async () => {
-        const stripe = await loadStripe("pk_test_51OwTgPSF8k242W8hvsJIiAspnftT25wVwqULgKxdJV0DayKGovHb7HpqPVfINGUpbVH4gDPsVcQr94eVNox1NhdM0003lggo7x")
+        const stripe = await loadStripe("Your Stripe Private key")
         // console.log("hello")
         const body = {
             products: cartItems

@@ -14,8 +14,8 @@ const app = express();
 
 const PORT = 8000;
 
-const username = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
+const username = process.env.VITE_DB_USERNAME;
+const password = process.env.VITE_DB_PASSWORD;
 
 
 Connection(username, password);
